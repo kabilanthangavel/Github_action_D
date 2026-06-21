@@ -8,7 +8,7 @@ jobs:
   steps:
    - name: build stage
      id: step1
-     run: echo "version = 0.0101" >> $GITHUB_OUTPUT
+     run: echo "version=0.0101" >> $GITHUB_OUTPUT
   
  deploy:
     needs: build
