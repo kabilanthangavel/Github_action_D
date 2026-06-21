@@ -10,12 +10,12 @@ jobs:
      id: step1
      run: echo "version = 0.0101" >> $GITHUB_OUTPUT
   
-  deploy:
+ deploy:
    needs: build
    runs-on: ubuntu-latest
    steps: 
     - name: deploy app
-    run: echo " the version of the app deployed is ${{needs.build.outputs.versions}}
+      run: echo " the version of the app deployed is ${{needs.build.outputs.versions}}
     
 
      
