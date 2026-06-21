@@ -1,10 +1,10 @@
 name: context variable demo
 on: push
 jobs:
-  To print conetx variable:
+  context_demo:
    runs-on: ubuntu-latest
    steps:
-     - name: : context variable
+     - name: context variable
        run: |
         echo "this is the owner of the repo ${{github.actor}}
         echo "the name of the repo is  ${{github.repository}}
