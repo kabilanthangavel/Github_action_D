@@ -3,12 +3,12 @@ on: push
 jobs:
  build:
   outputs:
-    versions: ${{steps.step1.outputs.version}}
+    versions: ${{steps.step1.outputs.versions}}
   runs-on: ubuntu-latest
   steps:
    - name: build stage
      id: step1
-     run: echo "version = 0.0101" >> $GITHUB_OUTPUT
+     run: echo "versions = 0.0101" >> $GITHUB_OUTPUT
   
  deploy:
    needs: build
