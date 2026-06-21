@@ -15,7 +15,7 @@ jobs:
    runs-on: ubuntu-latest
    steps: 
     - name: deploy app
-      run: echo " the version of the app deployed is ${{needs.build.outputs.version}}
+      run: echo " the version of the app deployed is ${{needs.build.outputs.version}}"
     
 
      
