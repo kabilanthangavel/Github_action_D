@@ -6,11 +6,19 @@ on:
      description: choose the env to deply
      required: true
      default: DEV
+     type: choice
+     options:
+       - dev
+       - test
+       - prod
+    app_version:
+     description: choose the app version to deploy
+     required: true
 jobs:
   input_demo:
     runs-on: ubuntu-latest
     steps:
      - name: deploy the app
-       run: echo "deploying the  to ${{ inputs.env_variable }}"
+       run: echo "deploying the app version ${{inputs.app_version}} to ${{ inputs.env_variable }}"
         
       
