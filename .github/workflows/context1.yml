@@ -1,4 +1,4 @@
-name: context variable demo
+name: context variable demo1
 on: push
 jobs:
   context_demo:
